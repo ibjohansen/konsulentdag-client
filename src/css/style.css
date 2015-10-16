@@ -1,0 +1,262 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+/*
+    Grid & Reset from
+	Minimal CSS
+	minimalcss.com
+*/
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Grid */
+.row {
+    width: 100%;
+    margin: 0 auto 20px auto;
+    display: inline-block;
+    position: relative;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    float: left;
+    margin-right: 2%;
+}
+
+.row .col-1:last-child, .row .col-2:last-child, .row .col-3:last-child, .row .col-4:last-child, .row .col-5:last-child, .row .col-6:last-child, .row .col-7:last-child, .row .col-8:last-child, .row .col-9:last-child, .row .col-10:last-child, .row .col-11:last-child, .row .col-12:last-child {
+    margin-right: 0;
+}
+
+.row:after, .clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.col-1 {
+    width: 6%;
+}
+
+.col-2 {
+    width: 15%;
+}
+
+.col-3 {
+    width: 23.5%;
+}
+
+.col-4 {
+    width: 32%;
+}
+
+.col-5 {
+    width: 40%;
+}
+
+.col-6 {
+    width: 49%;
+}
+
+.col-7 {
+    width: 56.5%;
+}
+
+.col-8 {
+    width: 66%;
+}
+
+.col-9 {
+    width: 74%;
+}
+
+.col-10 {
+    width: 82.5%;
+}
+
+.col-11 {
+    width: 91%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* ############################# */
+/* app styles */
+
+body {
+    font: 14px/20px "Roboto", sans-serif;
+    background-color: #f5f1ee;
+    color: #385988;
+}
+
+a {
+    color: #385988;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #FF6C2F;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #FF6C2F;
+}
+
+.side-column {
+    min-height: 100vh;
+}
+
+button {
+    padding: 6px 8px;
+}
+
+header {
+    clear: both;
+    margin-bottom: 100px
+}
+
+header a {
+    float: left;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px
+
+}
+
+.acando-logo {
+    height: 50px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+img {
+    border: 0;
+}
+
+/* ############################# */
+/* Tweets */
+
+.tweets {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.tweet {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    list-style-type: none;
+    color: #2c3e50;
+    background: white;
+    box-shadow: 0 3px 3px rgba(206, 206, 206, 0.85);
+    max-height: 500px;
+    margin: 20px 0;
+    animation: mymove .750s 1 ease-in;
+}
+
+@keyframes mymove {
+    from {
+        left: -1000px;
+        background: #FF6C2F;
+    }
+    to {
+        left: 0;
+        background: white;
+    }
+}
+
+.tweet .avatar {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 48px;
+    margin: 10px;
+    box-shadow: 0 3px 3px rgba(206, 206, 206, 0.85);
+    border-radius: 48px;
+}
+
+.tweet .body {
+    font-size: 14px;
+    display: inline-block;
+    float: right;
+    width: calc(100% - 72px);
+    margin: 0;
+    padding: 10px;
+}
+
+.tweet .body .screen-name {
+    font-size: 13px;
+    font-weight: normal;
+    color: #ccc;
+}
+
+.tweet .body .content {
+    display: block;
+    clear: left;
+    margin-top: 5px;
+}
+
+.tweet:before,
+.tweet:after {
+    display: table;
+    content: ' ';
+}
+
+.tweet:after {
+    clear: both;
+}
+
+.timestamp {
+    font-size: smaller;
+    color: rgba(44, 62, 80, 0.76);
+    float: right;
+    margin: 5px 5px 0 0;
+}
+
+/* ############################# */
+/* Loader */
+
+.loader {
+    width: 400px;
+    height: 400px;
+    margin: 100px auto;
+    background-color: #FF6C2F;
+    position: relative;
+    top:100px;
+
+    border-radius: 100%;
+    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+    0% { -webkit-transform: scale(0) }
+    100% {
+        -webkit-transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+@keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    } 100% {
+          -webkit-transform: scale(1.0);
+          transform: scale(1.0);
+          opacity: 0;
+      }
+}
+
