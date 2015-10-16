@@ -17,7 +17,7 @@ const Page = React.createClass({
     getDefaultProps() {
         return {
             feedUrl: 'https://acandotweets.firebaseio.com/tweets',
-            hashtag: 'acando'
+            hashtag: 'acando, acandonorge'
         };
     },
 
