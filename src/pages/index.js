@@ -16,8 +16,8 @@ const Page = React.createClass({
 
     getDefaultProps() {
         return {
-            feedUrl: 'https://konsulentdag.firebaseio.com/tweets',
-            hashtag: 'javascript'
+            feedUrl: 'https://acandotweets.firebaseio.com/tweets',
+            hashtag: 'acando'
         };
     },
 
