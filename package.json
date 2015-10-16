@@ -4,7 +4,7 @@
   "description": "A small demo client reading Tweets filtered on #konsulentdag",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server",
+    "start": "node server",
     "build": "webpack"
   },
   "keywords": [],

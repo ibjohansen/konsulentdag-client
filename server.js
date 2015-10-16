@@ -11,16 +11,6 @@ var publicPath = path.resolve(__dirname, 'public');
 
 app.use(express.static(publicPath));
 
-if (!isProduction) {
-    var bundle = require('./server/bundle.js');
-    bundle();
-    app.all('/build/*', function (req, res) {
-        proxy.web(req, res, {
-            target: 'http://localhost:8080'
-        });
-    });
-}
-
 app.get('*.png', function (req, res) {
     res.sendFile(publicPath + req.path);
 });
