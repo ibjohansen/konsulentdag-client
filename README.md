@@ -3,14 +3,14 @@ a small client displaying tweets saved in a firebase in  https://github.com/ibjo
 
 to use: clone and 
 
-```javascript
+<pre>
 $ npm install
-```
+</pre>
 
 
-```javascript
+<pre>
 $ npm start
-```
+</pre>
 
 open browser to [http://localhost:3000](http://localhost:3000)
 
