@@ -25,7 +25,7 @@ export default React.createClass({
                 )
             });
             return (
-                <ul>{images}</ul>
+                <ul className="media-list">{images}</ul>
             )
         } else {
             return <span></span>

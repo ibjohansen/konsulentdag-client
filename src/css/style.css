@@ -208,6 +208,10 @@ img {
     margin-top: 5px;
 }
 
+ul.media-list {
+    list-style: none;
+}
+
 .tweet:before,
 .tweet:after {
     display: table;
@@ -234,7 +238,7 @@ img {
     margin: 100px auto;
     background-color: #FF6C2F;
     position: relative;
-    top:100px;
+    top: 100px;
 
     border-radius: 100%;
     -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
@@ -242,7 +246,9 @@ img {
 }
 
 @-webkit-keyframes sk-scaleout {
-    0% { -webkit-transform: scale(0) }
+    0% {
+        -webkit-transform: scale(0)
+    }
     100% {
         -webkit-transform: scale(1.0);
         opacity: 0;
@@ -253,10 +259,11 @@ img {
     0% {
         -webkit-transform: scale(0);
         transform: scale(0);
-    } 100% {
-          -webkit-transform: scale(1.0);
-          transform: scale(1.0);
-          opacity: 0;
-      }
+    }
+    100% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+        opacity: 0;
+    }
 }
 
